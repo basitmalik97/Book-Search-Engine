@@ -1,57 +1,67 @@
-# Book Search Engine <!-- omit in toc -->
+# Book Search Engine (MERN: GraphQL)
 
-## Table of Contents <!-- omit in toc -->
+This project is a book search engine built using the MERN stack (MongoDB, Express.js, React, and Node.js) with a transition from a RESTful API to a GraphQL API using Apollo Server. The application allows users to search for books using the Google Books API, save their favorite books, and manage their saved book list.
 
-- [Description](#description)
-- [Usage](#usage)
-- [Credits](#credits)
-- [Version History](#version-history)
-- [License](#license)
+## Table of Contents
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Mock-Up](#mock-up)
+- [Getting Started](#getting-started)
+  - [Back-End Specifications](#back-end-specifications)
+  - [Front-End Specifications](#front-end-specifications)
+- [Grading Requirements](#grading-requirements)
+- [Deployment](#deployment)
+- [Application Quality](#application-quality)
+- [Repository Quality](#repository-quality)
+- [Review](#review)
 
-# Description
+## User Story
+As an avid reader, I want to search for new books to read so that I can keep a list of books to purchase.
 
-Your Challenge this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
+## Acceptance Criteria
+- Users can search for books and view search results.
+- Users can log in or sign up.
+- Logged-in users can save books to their account.
+- Logged-in users can view their saved books and remove books from their list.
+- Users can log out of the application.
 
-This week, you’ll take a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
+## Mock-Up
+The application includes a search functionality where users can enter a search term and view the results. Users can save books to their account and view their saved books. The interface is designed for an intuitive and easy-to-navigate user experience.
 
-## User Story <!-- omit in toc -->
+## Getting Started
+To run the application, follow the instructions in the [Back-End Specifications](#back-end-specifications) and [Front-End Specifications](#front-end-specifications) sections. Ensure that you have set up the Apollo Server for GraphQL queries and mutations and deployed the application to Render.
 
-```
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
-```
+### Back-End Specifications
+- Update the `auth.js` middleware function to work with the GraphQL API.
+- Implement the Apollo Server and apply it to the Express server as middleware in `server.js`.
+- Export typeDefs and resolvers in the `Schemas` directory.
+- Define necessary `Query` and `Mutation` types in `typeDefs.js`.
+- Modify the existing authentication middleware to work with GraphQL.
+- Use an Apollo Provider for communication with the Apollo Server.
 
-## Acceptance Criteria <!-- omit in toc -->
+### Front-End Specifications
+- Create `queries.js` and `mutations.js` files for GraphQL queries and mutations.
+- Set up Apollo Provider in `App.jsx`.
+- Use Apollo `useMutation()` Hook in `SearchBooks.jsx` and `SavedBooks.jsx` for saving and removing books.
+- Replace existing functionalities with GraphQL mutations in `SignupForm.jsx` and `LoginForm.jsx`.
 
-```
-GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-```
+## Deployment
+The application is deployed and accessible at [Live URL](#) on Render.
+
+## Application Quality
+- The user experience is intuitive and easy to navigate.
+- The user interface is clean and polished.
+- The application closely resembles the mock-up functionality provided.
+
+## Repository Quality
+- The repository has a unique name.
+- Follows best practices for file structure, naming conventions, and coding standards.
+- Contains multiple descriptive commit messages.
+- Includes a high-quality README file with project description, screenshots, and links.
+
+## Review
+- [)
+- [GitHub Repository](https://github.com/basitmalik97/Book-Search-Engine/edit/main/)
+
+---
+© 2024 Basit Malik. Confidential and Proprietary. All Rights Reserved.

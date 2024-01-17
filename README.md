@@ -1,57 +1,66 @@
-# Book Search Engine <!-- omit in toc -->
+# Book Search Engine
 
-## Table of Contents <!-- omit in toc -->
+## Overview
 
-- [Description](#description)
-- [Usage](#usage)
-- [Credits](#credits)
-- [Version History](#version-history)
-- [License](#license)
+Book Search Engine is a web application that allows users to search for books using the Google Books API. The application, originally built with a RESTful API, has been refactored to incorporate a GraphQL API with Apollo Server. Developed with the MERN stack, the app features a React front end, MongoDB database, and Node.js/Express.js server and API.
 
-# Description
+## Features
 
-Your Challenge this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
+- **Search Books:** Utilize the Google Books API to search for books.
+- **User Authentication:** Log in or sign up to save and view personalized book lists.
+- **Save and Remove Books:** Save books to your account and remove them as needed.
 
-This week, you’ll take a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
+## Demo
 
-## User Story <!-- omit in toc -->
+View the live demo of the application: [https://booksengis.onrender.com/](#)
 
-```
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
-```
+## Repository
 
-## Acceptance Criteria <!-- omit in toc -->
+GitHub Repository: [Repository Link](https://github.com/your-username/book-search-engine)
 
-```
-GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-```
+## Tech Stack
+
+- React.js
+- Node.js/Express.js
+- MongoDB (Atlas for deployment)
+- GraphQL (Apollo Server)
+
+## Screenshots
+
+Include screenshots of the application in action.
+
+## Getting Started
+
+1. **Clone the repository.**
+   ```bash
+   git clone https://github.com/your-username/book-search-engine.git
+   ```
+
+2. **Install dependencies.**
+   ```bash
+   cd book-search-engine
+   npm install
+   ```
+
+3. **Set up a MongoDB Atlas account and configure the connection string.**
+
+4. **Refactor the back-end files and update the front-end files to integrate Apollo Server for GraphQL.**
+
+## Usage
+
+1. Enter a search term in the input field to search for books.
+2. Save books to your account by clicking the "Save" button.
+3. View your saved books and remove them if needed.
+
+## Contributors
+
+- [Your Name](https://github.com/your-username)
+- [Contributor 1](https://github.com/contributor1)
+- [Contributor 2](https://github.com/contributor2)
+
+## Acknowledgments
+
+- Special thanks to the instructors and support staff for their guidance during this project.
+- Inspiration: [Reference or inspiration link]
+
+Feel free to customize this README further based on your specific project details and preferences.

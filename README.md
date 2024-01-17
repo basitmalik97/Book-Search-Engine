@@ -28,6 +28,7 @@ GitHub Repository: [Repository Link](https://github.com/your-username/book-searc
 ## Screenshots
 
 ![Screenshot](Screenshot.png)
+![Screenshot](Screenshot2.png)
 
 ## Getting Started
 

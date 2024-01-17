@@ -54,13 +54,5 @@ Include screenshots of the application in action.
 
 ## Contributors
 
-- [Your Name](https://github.com/your-username)
-- [Contributor 1](https://github.com/contributor1)
-- [Contributor 2](https://github.com/contributor2)
+- [Basit Malik](https://github.com/your-username)
 
-## Acknowledgments
-
-- Special thanks to the instructors and support staff for their guidance during this project.
-- Inspiration: [Reference or inspiration link]
-
-Feel free to customize this README further based on your specific project details and preferences.

@@ -54,5 +54,5 @@ Include screenshots of the application in action.
 
 ## Contributors
 
-- [Basit Malik](https://github.com/basitmalik97/Book-Search-Engine)
+- [Basit Malik](https://github.com/basitmalik97)
 
